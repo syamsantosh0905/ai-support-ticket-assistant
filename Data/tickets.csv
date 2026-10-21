@@ -1,0 +1,18 @@
+
+ticket_text,category,priority
+"I cannot log in to my account",Login,Medium
+"My password reset link is not working",Login,Medium
+"I am locked out after too many login attempts",Login,High
+"I forgot my account password",Login,Low
+"The application crashes whenever I open it",Application Error,High
+"The app shows an unexpected error message",Application Error,Medium
+"The page freezes when I click submit",Application Error,Medium
+"The application is completely unavailable",Application Error,High
+"I cannot connect to the company database",Database,High
+"My database query returns an error",Database,Medium
+"The database response is unusually slow",Database,Medium
+"I need help understanding a SQL error",Database,Low
+"My API request returns HTTP 401",API,Medium
+"Our API integration returns HTTP 500",API,High
+"The API rate limit has been exceeded",API,Medium
+"I need help configuring an API endpoint",API,Low
