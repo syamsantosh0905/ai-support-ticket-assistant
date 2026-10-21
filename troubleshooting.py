@@ -1,13 +1,21 @@
-
+import streamlit as st
 import os
 from dotenv import load_dotenv
 from google import genai
 
+
 load_dotenv()
 
-# Create the Gemini client only when an API key is available.
 api_key = os.getenv("GEMINI_API_KEY")
+
+if not api_key:
+    try:
+        api_key = st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        api_key = None
+
 client = genai.Client(api_key=api_key) if api_key else None
+
 
 
 def get_fallback_steps(category):
